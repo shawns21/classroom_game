@@ -1,4 +1,4 @@
-import sys,pygame
+import pygame
 
 pygame.init()
 
@@ -9,7 +9,7 @@ screen = pygame.display.set_mode(size)
 background = pygame.image.load("classroom.png")
 player = pygame.image.load("stickfig.png")
 
-x,y = 0,0
+x,y = 380,280
 speed = 8 
 
 while 1:
