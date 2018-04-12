@@ -133,14 +133,11 @@ while 1:
     keys=pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
         x = x - speed
-
-    if keys[pygame.K_RIGHT]:
+    elif keys[pygame.K_RIGHT]:
         x = x + speed
-
-    if keys[pygame.K_UP]:
+    elif keys[pygame.K_UP]:
         y = y - speed
-
-    if keys[pygame.K_DOWN]:
+    elif keys[pygame.K_DOWN]:
         y = y + speed
 
     p1.rect.x = p1.rect.x + x
@@ -148,13 +145,13 @@ while 1:
 
     for wall in pygame.sprite.spritecollide(p1, wall_list, False):
         if x < 0:
-            p1.rect.left = wall.rect.right
-        if x > 0:
-            p1.rect.right = wall.rect.left
-        if y > 0:
-            p1.rect.bottom = wall.rect.top
-        if y < 0: 
-            p1.rect.top = wall.rect.bottom
+            p1.rect.left = wall.rect.right + 1
+        elif x > 0:
+            p1.rect.right = wall.rect.left - 1
+        elif y > 0:
+            p1.rect.bottom = wall.rect.top - 2
+        elif y < 0: 
+            p1.rect.top = wall.rect.bottom + 1
 
     screen.blit(background, (0,0))
     all_list.draw(screen)
