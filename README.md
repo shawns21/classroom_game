@@ -7,5 +7,5 @@ https://stackoverflow.com/questions/40966994/pygame-sprite-wall-collision?utm_me
 
 
 Good Tutorials:<br>
-https://github.com/kidscancode/pygame_tutorials \n
+https://github.com/kidscancode/pygame_tutorials <br>
 https://www.youtube.com/watch?v=VO8rTszcW4s&list=PLsk-HSGFjnaH5yghzu7PcOzm9NhsW0Urw
