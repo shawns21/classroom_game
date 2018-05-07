@@ -5,7 +5,7 @@ WIDTH = 768
 FPS = 30
 TITLE = "Classroom"
 
-PLAYER_SPEED = 8
+PLAYER_SPEED = 250
 
 # define some colors (R, G, B)
 WHITE = (255, 255, 255)
